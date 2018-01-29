@@ -2,7 +2,6 @@ import React from 'react'
 import init from './headers'
 import Issue from './Issue'
 const API = "https://api.github.com/users/djm158/starred";
-
 class Stars extends React.Component {
   constructor(props) {
     super(props);
@@ -46,10 +45,10 @@ class Stars extends React.Component {
     return (
       <div>
       {stars.map(star =>
-        <div key={star.id}>
-					<p>{star.name}</p>
-          <Issue url={star.url + "/issues"} />
-        </div>
+        <ul key={star.id}>
+            <h1>{star.name}</h1>
+            <Issue url={star.url + "/issues"} />
+        </ul>
       )}
     </div>
     )

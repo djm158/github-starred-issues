@@ -1,5 +1,6 @@
 import React from 'react'
 import init from './headers'
+import styles from './Issue.css'
 
 class Issue extends React.Component {
   constructor(props) {
@@ -38,16 +39,14 @@ class Issue extends React.Component {
     }
 
     if (this.state.error) {
-      return <p>this.state.error.message</p>
+      return <p>{this.state.error}</p>
     }
     return (
-      <div>
+      <ul>
         {issues.map(issue => 
-          <ul key={issue.id}>
-            <li>{issue.title}</li>
-          </ul>
+          <li key={issue.id}>{issue.title}</li>
         )}
-      </div>
+      </ul>
     )
   }
 }
