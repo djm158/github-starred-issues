@@ -11,5 +11,6 @@ $ git clone git@github.com:djm158/github-starred-issues.git
 $ cd github-starred-issues
 $ npm install
 $ REACT_APP_TOKEN="your github auth token" npm start
-$ visit http://localhost:3000/
 ```
+
+visit http://localhost:3000/
