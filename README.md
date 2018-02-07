@@ -1,6 +1,6 @@
 # github-starred-issues
 
-react app to fetch a list of your starred repos and show issues related to them
+React app to fetch a list of your starred repos and show issues related to them. This is not to be used in production as it exposes your api key directly in the browser.
 
 ## Installation
 
