@@ -1,6 +1,6 @@
 import React from 'react'
 import init from './headers'
-import styles from './Issue.css'
+import './Issue.css'
 
 class Issue extends React.Component {
   constructor(props) {

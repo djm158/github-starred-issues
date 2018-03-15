@@ -2,13 +2,29 @@
   box-sizing: border-box;
 }
 
-ul {
-  max-width: 500px;
-  max-height: 600px;
-  overflow: auto;
-  list-style: none;
-  padding: 10px;
+.title {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
   float: left;
+  overflow: auto;
+  margin: 10px 20px;
+}
+
+.master {
+  /* display: flex; */
+  /* align-content: flex-start; */
+}
+
+ul {
+  list-style: none;
+  padding: 10px 0;
+  width: 100%;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
